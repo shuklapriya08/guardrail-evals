@@ -35,7 +35,7 @@ tests/test_stats.py   checks the statistics on synthetic data with known answers
 data/                 smoke test; perturbed prompts as generated and after hand review
 results/              exported results behind every number in the report
 annotations/          human labels for rewrite validity, the LLM review sheet, judge verdicts
-docs/                 the original learning plan
+logs_final/           Inspect logs behind the report: xstest/, robustness/, judge/
 ```
 
 ## Reproduce
@@ -80,7 +80,7 @@ Notes:
 - **XSTest** prompts: Röttger et al. (2024), licensed [CC BY 4.0](https://github.com/paul-rottger/xstest). Files in `data/`, `results/` and `annotations/` contain XSTest prompts and rewrites of them.
 - **Hindi rewrites** were generated with [Aya Expanse 8B](https://registry.ollama.ai/library/aya-expanse:8b) (CC BY-NC 4.0) and reviewed by hand: for non-commercial research use.
 - Paraphrases were generated with Qwen2.5-7B-Instruct. Model weights are not included in this repository.
-- Code: _choose a licence (e.g. MIT) and add a LICENSE file before publishing._
+- Code: MIT (see [LICENSE](LICENSE)).
 
 These prompts include requests for harmful content, used here only to test safety classifiers.
 
