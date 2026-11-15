@@ -1,0 +1,15 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Inspect logs (large; results are in results/)
+logs/
+
+# scratch and intermediate files, kept locally
+_scratch/
+judge_sheet.csv
+judge_sheet_unused.csv
+*.log
+data/harmbench_behaviors_text_all.csv
